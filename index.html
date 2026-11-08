@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gui Corts | Barbearia</title>
+  <meta name="description" content="Gui Corts Barbearia: cortes modernos, barba e acabamento preciso. Veja os serviços, os preços e agende pelo WhatsApp.">
+  <meta name="theme-color" content="#f4f1ec">
+  <meta property="og:title" content="Gui Corts | Barbearia">
+  <meta property="og:description" content="Cortes modernos, barba e acabamento preciso. Agende pelo WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/logo.png">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- theme.js no <head> para aplicar o tema antes da página aparecer (evita "piscar") -->
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <!-- Sprite de ícones (uso: <svg class="i"><use href="#i-nome"/></svg>) -->
+  <svg style="position:absolute;width:0;height:0" aria-hidden="true">
+    <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="m12 3 1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 17v4M17 19h4"/></symbol>
+    <symbol id="i-beard" viewBox="0 0 24 24"><path d="M5 9a7 7 0 0 1 14 0v3a7 7 0 0 1-14 0z"/><path d="M9 14c1 1.5 5 1.5 6 0"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M3 21l1.7-5A9 9 0 1 1 8 19.3z"/><path d="M9 9c0 3 3 6 6 6l1-2-2-1-1 .8c-1-.4-2-1.4-2.4-2.4L11.4 9l-1-2z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Gui Corts - início">
+        <img src="assets/images/logo.png" alt="" width="44" height="44">
+        <span>Gui Corts</span>
+      </a>
+      <nav class="nav" id="menu" aria-label="Principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Trabalhos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="header__actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Alternar tema claro/escuro">
+          <svg class="i i-moon"><use href="#i-moon"/></svg>
+          <svg class="i i-sun"><use href="#i-sun"/></svg>
+        </button>
+        <button class="icon-btn burger" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__text reveal">
+          <img class="hero__logo" src="assets/images/logo.png" alt="Logotipo Gui Corts Barbearia" width="120" height="120">
+          <p class="eyebrow">Barbearia</p>
+          <h1>Gui Corts</h1>
+          <p class="hero__tagline">Estilo e precisão em cada corte.</p>
+          <p class="hero__desc">Cortes modernos, degradês, barba, sobrancelha e alisamento. Atendimento com hora marcada, direto pelo WhatsApp.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" data-whatsapp><svg class="i"><use href="#i-whatsapp"/></svg>Agendar horário</a>
+            <a class="btn btn--ghost" href="#servicos">Ver serviços</a>
+          </div>
+        </div>
+        <figure class="hero__media reveal">
+          <!-- Troque a imagem em assets/images/hero/hero.jpg -->
+          <img src="assets/images/hero/hero.jpg" alt="Corte degradê com cabelo texturizado feito na Gui Corts" width="822" height="801" fetchpriority="high">
+        </figure>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS (lista gerada a partir de js/config.js) -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Serviços e preços</p>
+          <h2>Escolha o seu estilo</h2>
+        </header>
+        <ul class="services reveal" id="services-list"></ul>
+        <div class="center reveal">
+          <a class="btn btn--primary" data-whatsapp><svg class="i"><use href="#i-whatsapp"/></svg>Agendar pelo WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARROSSEL -->
+    <section class="section section--alt" id="galeria">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Trabalhos</p>
+          <h2>Resultados que falam por si</h2>
+        </header>
+        <div class="carousel reveal" id="carousel" aria-roledescription="carrossel" aria-label="Galeria de cortes">
+          <div class="carousel__track" tabindex="0">
+            <!-- ADICIONE SUAS FOTOS: copie os arquivos para assets/images/gallery/ e troque o src abaixo.
+                 Para mais fotos, duplique um bloco <figure>. -->
+            <figure class="carousel__slide"><img src="assets/images/gallery/corte-01.jpg" alt="Degradê com topo texturizado" loading="lazy"></figure>
+            <figure class="carousel__slide"><img src="assets/images/gallery/corte-02.jpg" alt="Corte infantil com riscos laterais" loading="lazy"></figure>
+            <figure class="carousel__slide"><img src="assets/images/placeholders/placeholder-1.svg" alt="Espaço para foto de corte" loading="lazy"></figure>
+            <figure class="carousel__slide"><img src="assets/images/placeholders/placeholder-2.svg" alt="Espaço para foto de corte" loading="lazy"></figure>
+            <figure class="carousel__slide"><img src="assets/images/placeholders/placeholder-3.svg" alt="Espaço para foto de corte" loading="lazy"></figure>
+          </div>
+          <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Foto anterior"><svg class="i"><use href="#i-arrow"/></svg></button>
+          <button class="carousel__btn carousel__btn--next" type="button" aria-label="Próxima foto"><svg class="i"><use href="#i-arrow"/></svg></button>
+          <div class="carousel__dots" role="tablist" aria-label="Indicadores"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE (edite o texto livremente) -->
+    <section class="section" id="sobre">
+      <div class="container about reveal">
+        <p class="eyebrow">Sobre a barbearia</p>
+        <h2>Gui Corts Barbearia</h2>
+        <p>Aqui o cuidado com o detalhe faz diferença. Cada atendimento é pensado para entregar um visual alinhado, confortável e com a sua personalidade.</p>
+        <p>Do corte clássico ao degradê, da barba bem desenhada à sobrancelha, o objetivo é simples: você sair satisfeito e com a confiança em dia.</p>
+      </div>
+    </section>
+
+    <!-- CONTATO / REDES -->
+    <section class="section section--alt" id="contato">
+      <div class="container center reveal">
+        <p class="eyebrow">Contato</p>
+        <h2>Vamos marcar o seu horário?</h2>
+        <p class="muted">Chame no WhatsApp ou acompanhe os trabalhos no Instagram.</p>
+        <div class="hero__cta hero__cta--center">
+          <a class="btn btn--primary" data-whatsapp><svg class="i"><use href="#i-whatsapp"/></svg>Agendar no WhatsApp</a>
+          <a class="btn btn--ghost" data-instagram><svg class="i"><use href="#i-instagram"/></svg>@guii_corts011</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container"><p>&copy; <span id="year"></span> Gui Corts Barbearia. Todos os direitos reservados.</p></div>
+  </footer>
+
+  <a class="fab" data-whatsapp aria-label="Agendar pelo WhatsApp"><svg class="i"><use href="#i-whatsapp"/></svg></a>
+
+  <script src="js/config.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

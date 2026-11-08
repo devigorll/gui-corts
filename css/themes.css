@@ -1,0 +1,29 @@
+/* Cores do site. Para mudar a paleta, edite apenas este arquivo. */
+:root {
+  --font-title: "Oswald", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --bg: #f4f1ec;
+  --bg-alt: #e9e4dc;
+  --surface: #ffffff;
+  --text: #1b1b1d;
+  --muted: #55555b;
+  --accent: #111111;
+  --accent-contrast: #ffffff;
+  --border: #d9d3c9;
+  --border-strong: #1b1b1d;
+  --header-bg: rgba(244, 241, 236, .88);
+  --shadow: 0 10px 30px rgba(27, 27, 29, .15);
+}
+:root[data-theme="dark"] {
+  --bg: #0f0f11;
+  --bg-alt: #161619;
+  --surface: #1c1c20;
+  --text: #f2efe9;
+  --muted: #a8a8ae;
+  --accent: #ffffff;
+  --accent-contrast: #111111;
+  --border: #2e2e34;
+  --border-strong: #f2efe9;
+  --header-bg: rgba(15, 15, 17, .88);
+  --shadow: 0 10px 30px rgba(0, 0, 0, .5);
+}

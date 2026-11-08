@@ -1,0 +1,20 @@
+/* Ajustes progressivos para telas maiores (mobile first) */
+@media (min-width: 600px) {
+  .hero__cta { flex-direction: row; flex-wrap: wrap; }
+  .hero__cta--center { justify-content: center; }
+  .carousel__slide { flex-basis: 48%; }
+  .carousel__btn { display: grid; }
+}
+@media (min-width: 860px) {
+  .burger, .fab { display: none; }
+  .nav { position: static; display: flex; flex-direction: row; gap: 2rem; padding: 0; background: transparent; border: 0; margin-left: auto; }
+  .nav a { border: 0; padding: .5rem 0; }
+  .header__inner { gap: 2rem; }
+  .hero { padding: 4.5rem 0 5.5rem; }
+  .hero__grid { grid-template-columns: 1.1fr .9fr; align-items: center; gap: 4rem; }
+  .hero__logo { width: 120px; height: 120px; }
+  .section { padding: 6rem 0; }
+  .services { grid-template-columns: 1fr 1fr; gap: 1.1rem; }
+  .carousel__slide { flex-basis: 32%; }
+  .footer { padding-bottom: 1.75rem; }
+}
